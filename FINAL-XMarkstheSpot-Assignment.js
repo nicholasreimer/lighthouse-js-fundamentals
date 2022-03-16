@@ -1,29 +1,29 @@
-const moves = ['north', 'north', 'west', 'west', 'north', 'east','north'];  
+const moves = ['north', 'north', 'west', 'west', 'north', 'east', 'north'];
 
 //anonymous function expression stored in a const var named finalPosition
-const finalPosition = function (moves) {
+function finalPosition(moves) {
 
-//var grid houses the output of the function in an array
-  let grid = [0,0];
+  //var grid will house the output of the function in an array that is temporarily set [0,0] and will be reassigned throughout the function
+  let grid = [0, 0];
 
-//for loop: starts at 0, the loop stops when the total length of the moves array is reached
+  //for loop: starts at 0, the loop stops when the total length of the moves array is reached
   for (let i = 0; i < moves.length; i++) {
 
-//inside for loop is a series of conditional statements that checks each string listed in the array
-//if the string is "north" then var grid array index position [1] increases by +1
-//the rest of the conditionals work the same way with varying outcomes of either positive (+1) or negative (-1)
-//on either index position [0] or [1] of the var grid array
+    //inside for loop is a series of conditional statements that checks each string listed in the array
+    //if the string is "north" then var grid array index position [1] increases by +1
+    //the rest of the conditionals work the same way with varying outcomes of either positive (+1) or negative (-1)
+    //on either index position [0] or [1] of the var grid array
     if (moves[i] === 'north') {
-      grid[1] = grid[1] + 1;
+      grid[1] += 1;
 
     } else if (moves[i] === 'south') {
-      grid[1] = grid[1] - 1;
+      grid[1] -= 1;
 
     } else if (moves[i] === 'east') {
-      grid[0] = grid[0] + 1;
+      grid[0] += 1;
 
     } else if (moves[i] === 'west') {
-      grid[0] = grid[0] - 1;
+      grid[0] -= 1;
     }
   }
   //return var grid as the output of the function
@@ -56,3 +56,12 @@ Return var grid: [Line 31]
 -return var grid as the output of the function and send it to the console as per original console.log
 */
 
+/* ASSIGNMENT:
+-Implement a function called finalPosition(moves), which will calculate the position of the parade based on an array of directional moves. 
+the parade will move on an X-Y grid
+-Your function will receive an array of elements that represent the x,y moves, the elements of the array are strings that say either 
+north, south, west, or east, these represent the parade moving in a particular direction by a single space on the grid. 
+-By looking at the path that the parade moves in, your function should calculate and then return an array representing the position of the parade 
+after completing all of the moves in the array. 
+-The first element of the resulting array should be the X position, and the second element of the array should be the Y position. The parade begins at [0,0].
+*/

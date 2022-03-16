@@ -1,13 +1,12 @@
 /* ASSIGNMNET:
--In this exercise, we will define 3 functions to calculate the areas of 3 different shapes:  1.)rectangles   2.)triangles  3.)circles
--Create the following 3 functions with the correct logic to calculate the area of that shape.
+-In this exercise, we will define 3 seperate functions to calculate the areas of 3 different shapes:  1.)rectangles  2.)triangles  3.)circles
 -The parameters to the functions will always be numbers.
 
 -Each function should return a number that corresponds to the area of the shape. Here is the math for each of the shapes:
 1.) rectangle: length × width
 2.) triangle: base × height / 2
 3.) circle: π × radius2
-*To access the value of π in your JavaScript code, use Math.PI.
+*NOTE* To access the value of π in your JavaScript code, use Math.PI
 
 -If any of the parameters are negative, the function should return undefined.
 */
@@ -36,17 +35,7 @@ function calculateCircleArea(radius) {
   return circleArea;
 }
 
-console.log(calculateRectangleArea(10, 5));     // should print 50
-console.log(calculateRectangleArea(1.5, 2.5));  // should print 3.75
-console.log(calculateRectangleArea(10, -5));    // should print undefined
 
-console.log(calculateTriangleArea(10, 5)); // should print 25
-console.log(calculateTriangleArea(3, 2.5)); // should print 3.75
-console.log(calculateTriangleArea(10, -5)); // should print undefined
-
-console.log(calculateCircleArea(10)); // should print 314.159...
-console.log(calculateCircleArea(3.5)); // should print 38.484...
-console.log(calculateCircleArea(-1)); // should print undefined
 /* 
 
 ^ The above was my version of the assignment which meets all criteria and runs properly, however the lint checker did not like it

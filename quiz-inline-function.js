@@ -10,21 +10,20 @@ but instead of passing the laugh() function as an argument, pass an inline funct
  * - Your `emotions()` function call should have an inline function expression passed as the second parameter
  * - Your function expression should return the expected output
 */
-
 function emotions(myString, myFunc) {
   console.log("I am " + myString + ", " + myFunc(2));
 }
 
-emotions ("happy", function(num) {
-  
-  var sound = ""; 
+emotions("happy", function (num) {
 
-  for (var i = 0 ; i < num ; i++) {
-      sound = sound + "ha" ;  
+  var sound = "";
+
+  for (var i = 0; i < num; i++) {
+    sound = sound + "ha";
   }
-  
-  sound = sound +"!"; 
-  return sound; 
+
+  sound += "!";
+  return sound;
 });
 
 /*

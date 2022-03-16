@@ -3,7 +3,7 @@ Write a named function expression that stores the function in a variable called 
 Don't forget to call the function using the variable name, not the function name:
 */
 
-let cry = function cryFunction(){
+let cry = function cryFunction() {
   return "boohoo!";
 }
 console.log(cry());

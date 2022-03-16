@@ -15,7 +15,7 @@ console.log("Now you're ready to go outside!");
 //seperate of the above this code will print "now youre ready to...""
 
 //NOTES:
-// it doesnt matter if the var is equal to a value that meets mulitiple if/else statements
+//it doesnt matter if the var is equal to a value that meets mulitiple if/else statements
 //this is because once it finds a match the code is done and moves to the next block
 //ex: if temperature = -1 it would meet the requirements for both of the first two question statements
 //but since it meets the first ones requirments nothing after matters

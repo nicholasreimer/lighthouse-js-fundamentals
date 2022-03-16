@@ -11,7 +11,6 @@ PLAN:
 -within the function write a conditional statement that uses the modulo operator to see if a number is divisible by 100, 
 -if the num argumanet is divisible by 100 save the number of hundreds its divisible by to a new var named numberOfContainers
 -return var numberOfContainers
-
 */
 
 function howManyHundreds(num) {

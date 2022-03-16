@@ -4,12 +4,17 @@ function movies(messageFunction, name) {
 }
 
 movies(function displayFavorite(movieName) {
-  console.log("My favorite movie is " + movieName); 
+  console.log("My favorite movie is " + movieName);
 }
-, "Finding Nemo");
+  , "Finding Nemo");
+
+//LINE 6-9 TRANSLATION: movies(displayFavorite(movieName), "Finding Nemo")
+//-All of these lines are just calling the movie function, the confusion comes from the fact that displayfavorite() function
+// is declared within the function. This hides the string "Finding Nemo" and the fact that it is really just argument #2
+// for the original movies() call.
 
 /*
-Code Explanation from Forums:
+Code Explanation from Forum:
 -You’re passing a function and a string to the movies function. 
 -Inside the movies function, you’re calling the passed in function with the passed in string. 
 -The function passed in logs "My favorite movie is " + the passed in string.

@@ -3,17 +3,19 @@ Write an anonymous function expression that stores a function in a variable call
 and outputs the number of "ha"s that you pass in as an argument.
 */
 
-let laugh = function(num){
-  let x =1;
+function laugh(num) {
   let laughmessage = ""
-  for(x=1; x <=num; x++){
+
+  for (x = 1; x <= num; x++) {
     laughmessage += "ha ";
   }
-  laughmessage += "!";
-  return laughmessage;
-  }
 
-  console.log(laugh(3));
+  laughmessage += "!";
+
+  return laughmessage;
+}
+
+console.log(laugh(3));
 
 /*
 -anonymus function is assigned to var named laugh, 
